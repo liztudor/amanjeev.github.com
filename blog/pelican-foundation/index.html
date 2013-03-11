@@ -77,19 +77,19 @@
 	    <p>Hello, World!</p>
 <p>This is an absolutely new site which is statically generated using <a class="reference external" href="http://docs.getpelican.com/">Pelican</a>. The framework used is <a class="reference external" href="http://foundation.zurb.com/">Foundation</a>.</p>
 <p>Pelican requires a theme which can be anything but I created a <a class="reference external" href="https://github.com/amanjeev/foundation_pelican">theme from Foundation - [Github Repository]</a> and <a class="reference external" href="https://github.com/amanjeev/amanjeev.com">here is the final source for amanjeev.com (this site)</a>.</p>
-<p>The only trouble I had was that Pelican by default requires the the home page to be a blog. That means, the home page is paginated. <a class="reference external" href="https://github.com/getpelican/pelican/pull/623">There is a solution</a> that makes it possible to have home page as a static page (RST or Markdown) and move your blog page to some other url like /blog.html. I could have used it but I saw two opportunities in the code -</p>
+<p>The only trouble I had was that Pelican by default requires the home page to be a blog. That means, the home page is paginated. <a class="reference external" href="https://github.com/getpelican/pelican/pull/623">There is a solution</a> that makes it possible to have home page as a static page (reST or Markdown) and move your blog page to some other URL like /blog.html. I could have used it but I saw two opportunities in the code -</p>
 <ul class="simple">
 <li><ol class="first arabic">
 <li>To have the home page still be a dynamic page with dynamic listing of the latest posts.</li>
 </ol>
 </li>
 <li><ol class="first arabic" start="2">
-<li>To be able to specify all the new templates taht you add as <em>paginated</em>.</li>
+<li>To be able to specify all the new templates that you add as <em>paginated</em>.</li>
 </ol>
 </li>
 </ul>
 <p>So, I <a class="reference external" href="https://github.com/amanjeev/pelican/commit/71ca51acc5d3ffe8e220b42a9280a614872fb03f">made some changes</a> which are clearly not official and live on a <a class="reference external" href="https://github.com/amanjeev/pelican/tree/nobloghome">separate branch</a>. There is indeed a lot of discussion needed and the Gods of the project will know more than I do at this point.</p>
-<p>However, there is some discussion that has started on the archive pages. I clearly think that the archive pages need pagination and the default page limit value must be different than that of the normal pagination for the blog posts. Archives page has considerably less data so a default value of <em>DEAFULT_PAGINATION</em>, which is usually around 5 to 10, does not work for it.</p>
+<p>However, there is some discussion that has started on the archive pages. I clearly think that the archive pages need pagination and the default page limit value must be different than that of the normal pagination for the blog posts. Archives page has considerably less data so a default value of <em>DEFAULT_PAGINATION</em>, which is usually around 5 to 10, does not work for it.</p>
 <p><a class="reference external" href="https://github.com/getpelican/pelican/issues/735">Github issue</a> in case you want to chime in.</p>
 
 		</article>		
