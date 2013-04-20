@@ -11,7 +11,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title>Amanjeev Sethi - Articles by Amanjeev Sethi</title>
+  <title>Amanjeev Sethi / List of some Vim commands</title>
   
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="/theme/css/foundation.min.css">
@@ -69,67 +69,99 @@
   </div>
   <div class="row">
     <div class="twelve columns">
-      	
-
-<div class="row">
+      	<div class="row">
 	<div class="twelve columns">
-	<div class="panel">	
-		<h2>About</h2>
-			<p>I am a Developer, Web and Internet adorer and (amateur) photographer. Apart from spending my days building web services for my employer, I try to learn  about Web Dev, Software, Mathematics, Physics, Genetics and Photography. </p>
-			<p>My interests include gadgets, machines, photography, the Web, languages (machine and natural), cultures, long discussions with friends and family, books, NYC (yes, the city), cooking. I also love watching <a href="http://www.ted.com/">TED talks</a>.</p>	
-			</div>
+		<div class="panel">
+ 		 <article>
+  		<header><h2>List of some Vim commands </h2>  </header>			
+	    <p>Just a list, nothing special.</p>
+<blockquote>
+=</blockquote>
+<p>Reformats the selected text according to the current indent rules.</p>
+<blockquote>
+==</blockquote>
+<p>Auto-indent current line.</p>
+<blockquote>
+g-</blockquote>
+<p>If you make a lot of edits, then undo them, then make one more edit, then decide you want the first set of edits back, most editors can't do it.  Emacs can, but it's a pain.  g- in Vim will usually take you straight there. This is not available in Vi.</p>
+<blockquote>
+%</blockquote>
+<p>Jump to the corresponding sibling item like open/close brackets - (), {}, []. Or HTML tags.</p>
+<blockquote>
+zz</blockquote>
+<p>Center your screen on the current line.</p>
+<blockquote>
+gi</blockquote>
+<p>In command mode, this goes to insert mode at the last place you were in the insert mode.</p>
+<blockquote>
+<p>Recording with : q&lt;character&gt;</p>
+<p>Replay with    : &#64;&lt;character&gt;</p>
+</blockquote>
+<p>Example, record with qa and replay with &#64;a.</p>
+<blockquote>
+:so %</blockquote>
+<p>To reload the file you are currently editing. This helps when you are editing .gvimrc or .vimrc files in Vim and you want to reload the changes.</p>
+<blockquote>
+<p>:vsp</p>
+<p>:sp</p>
+</blockquote>
+<p>Vertical split and horizontal split window, respectively. A lot of combinations are available. They take a command to not duplicate the window by default and open the one you specify.</p>
+<blockquote>
+<p>set splitbelow</p>
+<p>set splitright</p>
+</blockquote>
+<p>To make splitting more intuitive.</p>
+<blockquote>
+<p>nnoremap &lt;C-J&gt; &lt;C-W&gt;&lt;C-J&gt;</p>
+<p>nnoremap &lt;C-K&gt; &lt;C-W&gt;&lt;C-K&gt;</p>
+<p>nnoremap &lt;C-L&gt; &lt;C-W&gt;&lt;C-L&gt;</p>
+<p>nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;</p>
+</blockquote>
+<p>To map moving between the buffer splits more intuitive with c-hjkl.</p>
+<blockquote>
+ctrl + w _</blockquote>
+<p>Max out the height of the current split</p>
+<blockquote>
+ctrl + w |</blockquote>
+<p>Max out the width of the current split</p>
+<blockquote>
+ctrl + w =</blockquote>
+<p>Normalize all split sizes, which is very handy when resizing terminal</p>
+<blockquote>
+Ctrl+W R</blockquote>
+<p>Swap top/bottom or left/right split</p>
+<blockquote>
+Ctrl+W T</blockquote>
+<p>Break out current window into a new tabview</p>
+<blockquote>
+Ctrl+W o</blockquote>
+<p>Close every window in the current tabview but the current one</p>
+<p><strong>Some links</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/amanjeev/vim-setup/blob/master/.gvimrc">My .gvimrc file on Github</a></li>
+<li><a class="reference external" href="https://github.com/terryma/vim-multiple-cursors">Vim Multiple Cursors plugin like Sublime Text 2</a></li>
+<li><a class="reference external" href="http://robots.thoughtbot.com/post/48275867281/vim-splits-move-faster-and-more-naturally">Vim Splits - Move Faster and More Naturally</a></li>
+<li><a class="reference external" href="http://www.vim.org/scripts/script.php?script_id=1658">NERDTree</a></li>
+</ul>
+
+		</article>		
+		 <!-- AddThis Button BEGIN -->
+	  <div class="addthis_toolbox addthis_default_style ">
+		<a class="addthis_button_preferred_1"></a>
+		<a class="addthis_button_preferred_2"></a>
+		<a class="addthis_button_preferred_3"></a>
+		<a class="addthis_button_preferred_4"></a>
+		<a class="addthis_button_compact"></a>
+		<a class="addthis_counter addthis_bubble_style"></a>
+		</div>
+		<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4eb84aa830869b60"></script>
+		<!-- AddThis Button END -->
 	</div>
-</div>
-<p></p>
 
-<div class="row">
-	<div class="twelve columns">
-    	<div class="panel">
-		<h2>Recent Articles</h2>
-		    	    <ul class="article">
-	        				<li>
-				<!--<div class="article">-->
-        		        <a href="../../blog/list-of-some-vim-commands">List of some Vim commands</a>
-            		    	    	   <!-- </div> -->
-				</li>
-	        				<li>
-				<!--<div class="article">-->
-        		        <a href="../../blog/macho-developers-and-the-clique">Macho Developers and the Clique</a>
-            		    	    	   <!-- </div> -->
-				</li>
-	        				<li>
-				<!--<div class="article">-->
-        		        <a href="../../blog/pelican-foundation">Pelican + Foundation</a>
-            		    	    	   <!-- </div> -->
-				</li>
-	        				<li>
-				<!--<div class="article">-->
-        		        <a href="../../blog/photo-unused-bench-gathers-a-lot-of-moss">Photo: Unused bench gathers a lot of moss</a>
-            		    	    	   <!-- </div> -->
-				</li>
-	        				<li>
-				<!--<div class="article">-->
-        		        <a href="../../blog/ssh-rsync-dreamhost-backup-user">SSH RSYNC Dreamhost Backup User</a>
-            		    	    	   <!-- </div> -->
-				</li>
-	        				<li>
-				<!--<div class="article">-->
-        		        <a href="../../blog/ubuntu-1004-android-22-lg-optimus-t-application-development-setup">Ubuntu 10.04 – Android 2.2 – LG Optimus T – Application Development Setup</a>
-            		    	    	   <!-- </div> -->
-				</li>
-	        				<li>
-				<!--<div class="article">-->
-        		        <a href="../../blog/women-in-tech-and-harassment-they-face">Women In tech and harassment they face</a>
-            		    	    	   <!-- </div> -->
-				</li>
-	        			</ul>
-				
-	   	<p class="archives">
-			<a class="secondary button" href="/archives.html">Archives &rarr;</a>
-		</p>
-	    </div>
-    </div>
-</div> 
+ 		 </div>
+		</div>
+
      </div>
   </div>
   
