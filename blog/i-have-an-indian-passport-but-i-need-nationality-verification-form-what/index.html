@@ -15,9 +15,10 @@
   
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="/theme/css/foundation.min.css">
+  <link rel="stylesheet" href="/theme/css/fc-webicons.css">
   <link rel="stylesheet" href="/theme/css/app.css">
 
-  <script type="text/javascript" src="/theme/js/modernizr.foundation.js"></script>
+  <script type="text/javascript" src="/theme/js/vendor/custom.modernizr.js"></script>
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -25,56 +26,61 @@
   <![endif]-->
 
 </head>
-<body>
-
+<body class="antialiased">
+    
+  <!-- Header -->
+  <!--
   <div class="row">
-  <div id="header" class="twelve columns">
-  <div class="row">
-    <div class="three columns">
-		<h1 id="logo">
-      		<a href="../.." title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a>
-	  	</h1>
-	</div>
-	<div class="nine columns">
-	</div>
+    <div id="header" class="twelve columns">
+    <div class="row">
+        <div class="three columns">
+		    <p id="logo">
+      		    <a href="http://amanjeev.com" title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a>
+	  	    <p>
+    	</div>
 	</div>
 	</div>
-  </div>
-  <div class="row">
-	<div class="twelve columns">
+  </div> 
+  -->
+  
+	<!--<div class="twelve columns">-->
+    
+        <div class="sticky contain-to-grid fixed">
 		<nav class="top-bar">
-			<ul>
+			<ul class="title-area">
+            <!--
 			<li class="name">
 				<a href="#" title="Anchor" style="display:none;">#</a>
 				<li class="toggle-topbar"><a href="#"></a></li>
 			</li>
+            -->
+            <li class="name">
+                <h1><a href="/" title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 			</ul>
-		<section>
-		<ul class="left">
-			<li class="divider"></li>
-			<li><a href="/">Home</a></li>
-			<li class="divider"></li>
-			<li><a href="/blog.html">Posts</a></li>
-			<li class="divider"></li>
-			<li><a href="/archives.html">Archives</a></li>
-			<li class="divider"></li>
-			                               
-         	            	<li><a href="../../photography">Photography</a></li>
-				<li class="divider"></li>
-         	              
-       					</ul>
-		</section>
+    		<section class="top-bar-section">
+		    <ul class="right">
+                <li class="divider"></li>
+                <li><a href="/">Home</a></li>
+                <li class="divider"></li>
+                <li><a href="/blog.html">Posts</a></li>
+                <li class="divider"></li>
+                <li><a href="/archives.html">Archives</a></li>
+                <li class="divider"></li>
+                                                            <li><a href="/photography">Photography</a></li>
+                        <li class="divider"></li>
+                                  
+                			</ul>
+	    	</section>
 		</nav>
-	</div>
-  </div>
+        </div>
+	
   <div class="row">
-    <div class="twelve columns">
-      	<div class="row">
-	<div class="twelve columns">
-		<div class="panel">
- 		 <article>
-  		<header><h2>I have an Indian passport but I need Nationality Verification form. What!? </h2>  </header>			
-	    <p>Ahem!</p>
+    <div class="large-12 columns">
+      	 		 <article>
+      	 <header><h1 class="subheader"><a href="/blog/i-have-an-indian-passport-but-i-need-nationality-verification-form-what">I have an Indian passport but I need Nationality Verification form. What!?</a></h1></header>			
+	        <p>Ahem!</p>
 <blockquote>
 If you are looking for the Nationality Verification form of India then you may want to go to the website of Consulate General. I do not take any responsibility of anything. This blog post is a rant.</blockquote>
 <p>I am trying to get my passport renewed. As expected the <a class="reference external" href="http://www.indiacgny.org/">websites</a> <a class="reference external" href="http://www.indianembassy.org/">and</a> <a class="reference external" href="http://indiacgny.org/php/showContent.php?linkid=225">portals</a> of Indian government are useless. Fortunately, they have outsourced the process to another company – <a class="reference external" href="http://www.vfsglobal.com/">VFS Global</a>. So, I stumbled upon the <a class="reference external" href="http://www.vfsglobal.com/india/usa/addition_of_spouse_docreq.html">Documents Required page</a>. That’s where the funny part is.</p>
@@ -96,80 +102,69 @@ Nationality Verification Form</blockquote>
 		<a class="addthis_button_preferred_4"></a>
 		<a class="addthis_button_compact"></a>
 		<a class="addthis_counter addthis_bubble_style"></a>
-		</div>
+	  </div>
+        
 		<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
 		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4eb84aa830869b60"></script>
 		<!-- AddThis Button END -->
-	</div>
-
- 		 </div>
-		</div>
 
      </div>
   </div>
   
-  <div class="row" id="footer">
-	<div class="twelve columns">
-		<p>
-			Contact:
-			<a href="mailto:aj@amanjeev.com">@Email</a> | 
-			<a href="https://twitter.com/amanjeev">@Twitter</a> | 
-			<a href="https://github.com/amanjeev">@Github</a> | 
-			<a href="http://500px.com/amanjeev">@500px</a> | 
-			<a href="http://www.flickr.com/photos/amanjeev/">@Flickr</a> | 
-			<a href="http://linkedin/in/amanjeev">@Linkedin</a> | 
-			<a href="http://amanjeev.blogspot.com/">@Blogger</a>
-		</p>
-		<p>&copy; 2013 Amanjeev Sethi</p>
-
-		<p>Powered by: <a href="http://python.org">Python</a> | <a href="http://docs.getpelican.com/en/3.0/">Pelican</a> | <a href="http://foundation.zurb.com/">Foundation</a></p>
+  <div id="copyright">
+  <div class="row full-width">
+	<div class="large-4 columns">
+        <p>Powered by: <a href="http://python.org">Python</a> | <a href="http://docs.getpelican.com/en/3.0/">Pelican</a> | <a href="http://foundation.zurb.com/">Foundation</a></p>
+    </div> 
+    <div class="large-8 columns">
+		<ul class="inline-list right">
+	        <li><a href="mailto:aj@amanjeev.com" class="fc-webicon mail">Email</a> </li>
+        	<li><a href="https://twitter.com/amanjeev" class="fc-webicon twitter">Twitter</a> </li>
+        	<li><a href="https://github.com/amanjeev" class="fc-webicon github">Github</a> </li>
+    		<li><a href="http://linkedin/in/amanjeev" class="fc-webicon linkedin">Linkedin</a> </li>
+			<li><a href="http://amanjeev.blogspot.com/" class="fc-webicon blogger">Blogger</a> </li>
+    		<li><a href="http://www.flickr.com/photos/amanjeev/" class="fc-webicon flickr">Flickr</a> </li>
+        	<li><a href="http://500px.com/amanjeev" class="fc-webicon f500px">500px</a> </li>
+		</ul>
+        
 	</div>
+		           
   </div>
- 
+  
+ </div>
   <!-- Included JS Files (Uncompressed) -->
   <!--
   
-  <script src="javascripts/jquery.js"></script>
-  
+  <script src="javascripts/jquery.js"></script>  
   <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  
   <script src="javascripts/jquery.foundation.forms.js"></script>
-  
   <script src="javascripts/jquery.foundation.reveal.js"></script>
-  
   <script src="javascripts/jquery.foundation.orbit.js"></script>
-  
   <script src="javascripts/jquery.foundation.navigation.js"></script>
-  
   <script src="javascripts/jquery.foundation.buttons.js"></script>
-  
   <script src="javascripts/jquery.foundation.tabs.js"></script>
-  
   <script src="javascripts/jquery.foundation.tooltips.js"></script>
-  
   <script src="javascripts/jquery.foundation.accordion.js"></script>
-  
   <script src="javascripts/jquery.placeholder.js"></script>
-  
   <script src="javascripts/jquery.foundation.alerts.js"></script>
-  
   <script src="javascripts/jquery.foundation.topbar.js"></script>
-  
   <script src="javascripts/jquery.foundation.joyride.js"></script>
-  
   <script src="javascripts/jquery.foundation.clearing.js"></script>
-  
   <script src="javascripts/jquery.foundation.magellan.js"></script>
-  
   -->
   
   <!-- Included JS Files (Compressed) -->
-  <script type="text/javascript" src="/theme/js/jquery.js"></script>
+  <script type="text/javascript" src="/theme/js/vendor/jquery.js"></script>
   <script type="text/javascript" src="/theme/js/foundation.min.js"></script>
-  
+  <script type="text/javascript">
+    $(document).foundation();
+  </script>
+  <!--<script src="javascripts/jquery.foundation.navigation.js"></script>-->
+
   <!-- Initialize JS Plugins -->
   <script type="text/javascript" src="/theme/js/app.js"></script>
-
+    
+    
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project=6316123; 

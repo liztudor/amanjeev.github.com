@@ -1,66 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Amanjeev Sethi</title><link>http://amanjeev.com/</link><description></description><atom:link href="http://amanjeev.com/feeds/rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 20 Apr 2013 00:00:00 -0400</lastBuildDate><item><title>List of some Vim commands</title><link>http://amanjeev.com/blog/list-of-some-vim-commands</link><description>&lt;p&gt;Just a list, nothing special.&lt;/p&gt;
-&lt;blockquote&gt;
-=&lt;/blockquote&gt;
-&lt;p&gt;Reformats the selected text according to the current indent rules.&lt;/p&gt;
-&lt;blockquote&gt;
-==&lt;/blockquote&gt;
-&lt;p&gt;Auto-indent current line.&lt;/p&gt;
-&lt;blockquote&gt;
-g-&lt;/blockquote&gt;
-&lt;p&gt;If you make a lot of edits, then undo them, then make one more edit, then decide you want the first set of edits back, most editors can't do it.  Emacs can, but it's a pain.  g- in Vim will usually take you straight there. This is not available in Vi.&lt;/p&gt;
-&lt;blockquote&gt;
-%&lt;/blockquote&gt;
-&lt;p&gt;Jump to the corresponding sibling item like open/close brackets - (), {}, []. Or HTML tags.&lt;/p&gt;
-&lt;blockquote&gt;
-zz&lt;/blockquote&gt;
-&lt;p&gt;Center your screen on the current line.&lt;/p&gt;
-&lt;blockquote&gt;
-gi&lt;/blockquote&gt;
-&lt;p&gt;In command mode, this goes to insert mode at the last place you were in the insert mode.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Recording with : q&amp;lt;character&amp;gt;&lt;/p&gt;
-&lt;p&gt;Replay with    : &amp;#64;&amp;lt;character&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Example, record with qa and replay with &amp;#64;a.&lt;/p&gt;
-&lt;blockquote&gt;
-:so %&lt;/blockquote&gt;
-&lt;p&gt;To reload the file you are currently editing. This helps when you are editing .gvimrc or .vimrc files in Vim and you want to reload the changes.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;:vsp&lt;/p&gt;
-&lt;p&gt;:sp&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Vertical split and horizontal split window, respectively. A lot of combinations are available. They take a command to not duplicate the window by default and open the one you specify.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;set splitbelow&lt;/p&gt;
-&lt;p&gt;set splitright&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;To make splitting more intuitive.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;nnoremap &amp;lt;C-J&amp;gt; &amp;lt;C-W&amp;gt;&amp;lt;C-J&amp;gt;&lt;/p&gt;
-&lt;p&gt;nnoremap &amp;lt;C-K&amp;gt; &amp;lt;C-W&amp;gt;&amp;lt;C-K&amp;gt;&lt;/p&gt;
-&lt;p&gt;nnoremap &amp;lt;C-L&amp;gt; &amp;lt;C-W&amp;gt;&amp;lt;C-L&amp;gt;&lt;/p&gt;
-&lt;p&gt;nnoremap &amp;lt;C-H&amp;gt; &amp;lt;C-W&amp;gt;&amp;lt;C-H&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;To map moving between the buffer splits more intuitive with c-hjkl.&lt;/p&gt;
-&lt;blockquote&gt;
-ctrl + w _&lt;/blockquote&gt;
-&lt;p&gt;Max out the height of the current split&lt;/p&gt;
-&lt;blockquote&gt;
-ctrl + w |&lt;/blockquote&gt;
-&lt;p&gt;Max out the width of the current split&lt;/p&gt;
-&lt;blockquote&gt;
-ctrl + w =&lt;/blockquote&gt;
-&lt;p&gt;Normalize all split sizes, which is very handy when resizing terminal&lt;/p&gt;
-&lt;blockquote&gt;
-Ctrl+W R&lt;/blockquote&gt;
-&lt;p&gt;Swap top/bottom or left/right split&lt;/p&gt;
-&lt;blockquote&gt;
-Ctrl+W T&lt;/blockquote&gt;
-&lt;p&gt;Break out current window into a new tabview&lt;/p&gt;
-&lt;blockquote&gt;
-Ctrl+W o&lt;/blockquote&gt;
-&lt;p&gt;Close every window in the current tabview but the current one&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Amanjeev Sethi</title><link>http://amanjeev.com/</link><description></description><atom:link href="http://amanjeev.com/feeds/rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 20 Apr 2013 00:00:00 -0400</lastBuildDate><item><title>List of some Vim commands</title><link>http://amanjeev.com/blog/list-of-some-vim-commands</link><description>&lt;p&gt;Just a list, nothing special.&lt;/p&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;Reformats the selected text according to the current indent rules&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+=
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Auto-indent current line&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+==
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;If you make a lot of edits, then undo them, then make one more edit, then decide you want the first set of edits back, most editors can't do it.  Emacs can, but it's a pain.  g- in Vim will usually take you straight there. This is not available in Vi.&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+g-
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Jump to the corresponding sibling item like open/close brackets - (), {}, []. Or HTML tags&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+%
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Center your screen on the current line&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+zz
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;In command mode, this goes to insert mode at the last place you were in the insert mode&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+gi
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Example, record with qa and replay with &amp;#64;a&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+Recording with : q&amp;lt;character&amp;gt;
+Replay with    : &amp;#64;&amp;lt;character&amp;gt;
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;To reload the file you are currently editing. This helps when you are editing .gvimrc or .vimrc files in Vim and you want to reload the changes&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+:so %
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Vertical split and horizontal split window, respectively. A lot of combinations are available. They take a command to not duplicate the window by default and open the one you specify&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+:vsp
+:sp
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;To make splitting more intuitive&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+set splitbelow
+set splitright
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;To map moving between the buffer splits more intuitive with c-hjkl&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+nnoremap &amp;lt;C-J&amp;gt; &amp;lt;C-W&amp;gt;&amp;lt;C-J&amp;gt;
+nnoremap &amp;lt;C-K&amp;gt; &amp;lt;C-W&amp;gt;&amp;lt;C-K&amp;gt;
+nnoremap &amp;lt;C-L&amp;gt; &amp;lt;C-W&amp;gt;&amp;lt;C-L&amp;gt;
+nnoremap &amp;lt;C-H&amp;gt; &amp;lt;C-W&amp;gt;&amp;lt;C-H&amp;gt;
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Max out the height of the current split&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+ctrl + w _
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Max out the width of the current split&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+ctrl + w |
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Normalize all split sizes, which is very handy when resizing terminal&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+ctrl + w =
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Swap top/bottom or left/right split&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+Ctrl+W R
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Break out current window into a new tabview&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+Ctrl+W T
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;dt&gt;Close every window in the current tabview but the current one&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class="first last literal-block"&gt;
+Ctrl+W o
+&lt;/pre&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
 &lt;p&gt;&lt;strong&gt;Some links&lt;/strong&gt;&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://github.com/amanjeev/vim-setup/blob/master/.gvimrc"&gt;My .gvimrc file on Github&lt;/a&gt;&lt;/li&gt;
@@ -72,29 +104,27 @@ Ctrl+W o&lt;/blockquote&gt;
 &lt;p&gt;This is an absolutely new site which is statically generated using &lt;a class="reference external" href="http://docs.getpelican.com/"&gt;Pelican&lt;/a&gt;. The framework used is &lt;a class="reference external" href="http://foundation.zurb.com/"&gt;Foundation&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Pelican requires a theme which can be anything but I created a &lt;a class="reference external" href="https://github.com/amanjeev/foundation_pelican"&gt;theme from Foundation - [Github Repository]&lt;/a&gt; and &lt;a class="reference external" href="https://github.com/amanjeev/amanjeev.com"&gt;here is the final source for amanjeev.com (this site)&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The only trouble I had was that Pelican by default requires the home page to be a blog. That means, the home page is paginated. &lt;a class="reference external" href="https://github.com/getpelican/pelican/pull/623"&gt;There is a solution&lt;/a&gt; that makes it possible to have home page as a static page (reST or Markdown) and move your blog page to some other URL like /blog.html. I could have used it but I saw two opportunities in the code -&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;ol class="first arabic"&gt;
+&lt;ol class="arabic simple"&gt;
 &lt;li&gt;To have the home page still be a dynamic page with dynamic listing of the latest posts.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;ol class="first arabic" start="2"&gt;
 &lt;li&gt;To be able to specify all the new templates that you add as &lt;em&gt;paginated&lt;/em&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;So, I &lt;a class="reference external" href="https://github.com/amanjeev/pelican/commit/71ca51acc5d3ffe8e220b42a9280a614872fb03f"&gt;made some changes&lt;/a&gt; which are clearly not official and live on a &lt;a class="reference external" href="https://github.com/amanjeev/pelican/tree/nobloghome"&gt;separate branch&lt;/a&gt;. There is indeed a lot of discussion needed and the Gods of the project will know more than I do at this point.&lt;/p&gt;
 &lt;p&gt;However, there is some discussion that has started on the archive pages. I clearly think that the archive pages need pagination and the default page limit value must be different than that of the normal pagination for the blog posts. Archives page has considerably less data so a default value of &lt;em&gt;DEFAULT_PAGINATION&lt;/em&gt;, which is usually around 5 to 10, does not work for it.&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/getpelican/pelican/issues/735"&gt;Github issue&lt;/a&gt; in case you want to chime in.&lt;/p&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amanjeev Sethi</dc:creator><pubDate>Sun, 24 Feb 2013 00:00:00 -0500</pubDate><guid>tag:amanjeev.com,2013-02-24:blog/pelican-foundation</guid></item><item><title>Customer Management Effort</title><link>http://amanjeev.com/blog/customer-management-effort</link><description>&lt;p&gt;This post is just a collection two nice personal customer management stories.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Charity Water&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="section" id="charity-water"&gt;
+&lt;h2&gt;Charity Water&lt;/h2&gt;
 &lt;p&gt;Last year I donated some money to &lt;a class="reference external" href="http://www.charitywater.org"&gt;Charity Water&lt;/a&gt;. I have donated money to some of the well-known organizations, from large sized to some smaller than Charity Water. I have never received a hand-written, address-to-me letter/card from any organization before.&lt;/p&gt;
-&lt;img alt="Letter from charity water, scanned copy" class="align-center" src="http://amanjeev.com/img/charity_water_card.jpg" style="width: 300px; height: 406px;" /&gt;
+&lt;img alt="Letter from charity water, scanned copy" class="align-center" src="/img/charity_water_card.jpg" style="width: 300px; height: 406px;" /&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://amanjeev.com/img/charity_water_card.jpg"&gt;You can see a scanned copy of the card from Charity Water&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Since then I have been wondering if this is the right thing to do. It seems obvious that this is a very good strategy to thank the existing customers and keep them happy. I know that this is an effort to make things more personal for me and it feels great. I donated to their cause so I already was aligned with what they are doing and this personally written letter makes it easy to connect.&lt;/p&gt;
 &lt;p&gt;Also, this is the first charity to explicitly mention it to me that a 100% of my donations will go to the cause. This maybe a minor thing but I felt that this was a nice little statement to get my trust. Thank you Charity Water for sending a card to me that looks like you put an effort.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;BustedTees&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="bustedtees"&gt;
+&lt;h2&gt;BustedTees&lt;/h2&gt;
 &lt;p&gt;This company knows how to please their customers. I ordered a bunch of T-shirts and a few crazy things from them a while ago and asked for a 2-day shipping. For some reason, on the 4th day I suspected that my package was stolen or misplaced. I called their customer service with only the order number in my hand. It took about 3 minutes for the entire conversation for the customer representative to arrive at a conclusion - &lt;em&gt;Ship me another order with the same items immediately&lt;/em&gt;. &lt;strong&gt;And they did!&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;A few days later I also recieved the original package. Luckily, BustedTees had already sent me a UPS box to return the extra items. I had to do, nothing expect for making that call to their customer service department.&lt;/p&gt;
+&lt;/div&gt;
 </description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Amanjeev Sethi</dc:creator><pubDate>Mon, 14 Jan 2013 00:00:00 -0500</pubDate><guid>tag:amanjeev.com,2013-01-14:blog/customer-management-effort</guid></item><item><title>Photo: Unused bench gathers a lot of moss</title><link>http://amanjeev.com/blog/photo-unused-bench-gathers-a-lot-of-moss</link><description>&lt;img alt="http://pcdn.500px.net/16341429/ea700652f238ad65807bdfe9c06ff1f5b0a92a15/4.jpg" src="http://pcdn.500px.net/16341429/ea700652f238ad65807bdfe9c06ff1f5b0a92a15/4.jpg" /&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://500px.com/photo/16341429"&gt;Unused bench gathers a lot of moss&lt;/a&gt; is now in the Popular pictures’ set on &lt;a class="reference external" href="http://500px.com/"&gt;500px (the photography website)&lt;/a&gt;. I also have a &lt;a class="reference external" href="http://500px.com/photo/16341455"&gt;B&amp;amp;W version of this picture&lt;/a&gt; which has amazing texture of this bench but I guess more folks in the world have better/more &lt;cite&gt;cone cells&lt;/cite&gt; in their eyes than I do. My response to the B&amp;amp;W picture was more positive than this one, even though I love this picture.&lt;/p&gt;
 &lt;p&gt;This picture was taken in the American University, Washington D.C. Photography can be very unpredictable when it comes to subjects. One can have as many themes and one can keep on shooting the entire day but the best piece of the day may certainly be something you just randomly clicked. For my future self, I need to remember two things -&lt;/p&gt;

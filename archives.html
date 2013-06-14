@@ -15,9 +15,10 @@
   
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="/theme/css/foundation.min.css">
+  <link rel="stylesheet" href="/theme/css/fc-webicons.css">
   <link rel="stylesheet" href="/theme/css/app.css">
 
-  <script type="text/javascript" src="/theme/js/modernizr.foundation.js"></script>
+  <script type="text/javascript" src="/theme/js/vendor/custom.modernizr.js"></script>
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -25,211 +26,171 @@
   <![endif]-->
 
 </head>
-<body>
-
+<body class="antialiased">
+    
+  <!-- Header -->
+  <!--
   <div class="row">
-  <div id="header" class="twelve columns">
-  <div class="row">
-    <div class="three columns">
-		<h1 id="logo">
-      		<a href="." title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a>
-	  	</h1>
-	</div>
-	<div class="nine columns">
-	</div>
+    <div id="header" class="twelve columns">
+    <div class="row">
+        <div class="three columns">
+		    <p id="logo">
+      		    <a href="http://amanjeev.com" title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a>
+	  	    <p>
+    	</div>
 	</div>
 	</div>
-  </div>
-  <div class="row">
-	<div class="twelve columns">
+  </div> 
+  -->
+  
+	<!--<div class="twelve columns">-->
+    
+        <div class="sticky contain-to-grid fixed">
 		<nav class="top-bar">
-			<ul>
+			<ul class="title-area">
+            <!--
 			<li class="name">
 				<a href="#" title="Anchor" style="display:none;">#</a>
 				<li class="toggle-topbar"><a href="#"></a></li>
 			</li>
+            -->
+            <li class="name">
+                <h1><a href="/" title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 			</ul>
-		<section>
-		<ul class="left">
-			<li class="divider"></li>
-			<li><a href="/">Home</a></li>
-			<li class="divider"></li>
-			<li><a href="/blog.html">Posts</a></li>
-			<li class="divider"></li>
-			<li><a href="/archives.html">Archives</a></li>
-			<li class="divider"></li>
-			                               
-         	            	<li><a href="./photography">Photography</a></li>
-				<li class="divider"></li>
-         	              
-       					</ul>
-		</section>
+    		<section class="top-bar-section">
+		    <ul class="right">
+                <li class="divider"></li>
+                <li><a href="/">Home</a></li>
+                <li class="divider"></li>
+                <li><a href="/blog.html">Posts</a></li>
+                <li class="divider"></li>
+                <li><a href="/archives.html">Archives</a></li>
+                <li class="divider"></li>
+                                                            <li><a href="/photography">Photography</a></li>
+                        <li class="divider"></li>
+                                  
+                			</ul>
+	    	</section>
 		</nav>
-	</div>
-  </div>
+        </div>
+	
   <div class="row">
-    <div class="twelve columns">
+    <div class="large-12 columns">
       	
-<div class="row">
-	<div class="twelve columns">	
-	    <div class="panel">
-		<h2>Archives</h2>
+		<h1 class="subheader">Archives</h1>
 					<ul class="archives">
 	                        <li> 
-			   		<a href="./blog/list-of-some-vim-commands">List of some Vim commands</a> <span> 	<abbr class="published" title="2013-04-20T00:00:00">
-    [ <b>Sat 20 April 2013</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/list-of-some-vim-commands">List of some Vim commands</a> <span class="radius secondary label">Created: Sat 20 April 2013</span><span class="radius secondary label"> Category: programming
 				</li>
     	                     <li> 
-			   		<a href="./blog/pelican-foundation">Pelican + Foundation</a> <span> 	<abbr class="published" title="2013-02-24T00:00:00">
-    [ <b>Sun 24 February 2013</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/pelican-foundation">Pelican + Foundation</a> <span class="radius secondary label">Created: Sun 24 February 2013</span><span class="radius secondary label"> Category: Code
 				</li>
     	                     <li> 
-			   		<a href="./blog/customer-management-effort">Customer Management Effort</a> <span> 	<abbr class="published" title="2013-01-14T00:00:00">
-    [ <b>Mon 14 January 2013</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/customer-management-effort">Customer Management Effort</a> <span class="radius secondary label">Created: Mon 14 January 2013</span><span class="radius secondary label"> Category: Thoughts
 				</li>
     	                     <li> 
-			   		<a href="./blog/photo-unused-bench-gathers-a-lot-of-moss">Photo: Unused bench gathers a lot of moss</a> <span> 	<abbr class="published" title="2012-10-21T00:00:00">
-    [ <b>Sun 21 October 2012</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/photo-unused-bench-gathers-a-lot-of-moss">Photo: Unused bench gathers a lot of moss</a> <span class="radius secondary label">Created: Sun 21 October 2012</span><span class="radius secondary label"> Category: Photography
 				</li>
     	                     <li> 
-			   		<a href="./blog/10000">10000</a> <span> 	<abbr class="published" title="2012-09-21T00:00:00">
-    [ <b>Fri 21 September 2012</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/10000">10000</a> <span class="radius secondary label">Created: Fri 21 September 2012</span><span class="radius secondary label"> Category: Photography
 				</li>
     	                     <li> 
-			   		<a href="./blog/if-you-talk-about-your-interests-my-eyes-might-glaze-over">If you talk about your interests, my eyes might glaze over</a> <span> 	<abbr class="published" title="2012-08-10T00:00:00">
-    [ <b>Fri 10 August 2012</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/if-you-talk-about-your-interests-my-eyes-might-glaze-over">If you talk about your interests, my eyes might glaze over</a> <span class="radius secondary label">Created: Fri 10 August 2012</span><span class="radius secondary label"> Category: Science
 				</li>
     	                     <li> 
-			   		<a href="./blog/i-have-an-indian-passport-but-i-need-nationality-verification-form-what">I have an Indian passport but I need Nationality Verification form. What!?</a> <span> 	<abbr class="published" title="2012-07-15T00:00:00">
-    [ <b>Sun 15 July 2012</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/i-have-an-indian-passport-but-i-need-nationality-verification-form-what">I have an Indian passport but I need Nationality Verification form. What!?</a> <span class="radius secondary label">Created: Sun 15 July 2012</span><span class="radius secondary label"> Category: Thoughts
 				</li>
     	                     <li> 
-			   		<a href="./blog/macho-developers-and-the-clique">Macho Developers and the Clique</a> <span> 	<abbr class="published" title="2012-07-13T00:00:00">
-    [ <b>Fri 13 July 2012</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/macho-developers-and-the-clique">Macho Developers and the Clique</a> <span class="radius secondary label">Created: Fri 13 July 2012</span><span class="radius secondary label"> Category: Social
 				</li>
     	                     <li> 
-			   		<a href="./blog/friend-firefly">Friend Firefly</a> <span> 	<abbr class="published" title="2012-06-24T00:00:00">
-    [ <b>Sun 24 June 2012</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/friend-firefly">Friend Firefly</a> <span class="radius secondary label">Created: Sun 24 June 2012</span><span class="radius secondary label"> Category: Photography
 				</li>
     	                     <li> 
-			   		<a href="./blog/eclipse-encoding-pain">Eclipse Encoding Pain</a> <span> 	<abbr class="published" title="2012-05-24T00:00:00">
-    [ <b>Thu 24 May 2012</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/eclipse-encoding-pain">Eclipse Encoding Pain</a> <span class="radius secondary label">Created: Thu 24 May 2012</span><span class="radius secondary label"> Category: Code
 				</li>
     	                     <li> 
-			   		<a href="./blog/ubuntu-1004-android-22-lg-optimus-t-application-development-setup">Ubuntu 10.04 – Android 2.2 – LG Optimus T – Application Development Setup</a> <span> 	<abbr class="published" title="2012-05-01T00:00:00">
-    [ <b>Tue 01 May 2012</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/ubuntu-1004-android-22-lg-optimus-t-application-development-setup">Ubuntu 10.04 – Android 2.2 – LG Optimus T – Application Development Setup</a> <span class="radius secondary label">Created: Tue 01 May 2012</span><span class="radius secondary label"> Category: Code
 				</li>
     	                     <li> 
-			   		<a href="./blog/book-the-age-of-entanglement">Book: The age of entanglement</a> <span> 	<abbr class="published" title="2011-11-05T00:00:00">
-    [ <b>Sat 05 November 2011</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/book-the-age-of-entanglement">Book: The age of entanglement</a> <span class="radius secondary label">Created: Sat 05 November 2011</span><span class="radius secondary label"> Category: Books
 				</li>
     	                     <li> 
-			   		<a href="./blog/women-in-tech-and-harassment-they-face">Women In tech and harassment they face</a> <span> 	<abbr class="published" title="2011-10-28T00:00:00">
-    [ <b>Fri 28 October 2011</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/women-in-tech-and-harassment-they-face">Women In tech and harassment they face</a> <span class="radius secondary label">Created: Fri 28 October 2011</span><span class="radius secondary label"> Category: Social
 				</li>
     	                     <li> 
-			   		<a href="./blog/androids-action_call-is-restricted-duh">Android’s ACTION_CALL is restricted, duh!</a> <span> 	<abbr class="published" title="2011-02-16T00:00:00">
-    [ <b>Wed 16 February 2011</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/androids-action_call-is-restricted-duh">Android’s ACTION_CALL is restricted, duh!</a> <span class="radius secondary label">Created: Wed 16 February 2011</span><span class="radius secondary label"> Category: Code
 				</li>
     	                     <li> 
-			   		<a href="./blog/book-review-css-mastery">Book Review: CSS Mastery</a> <span> 	<abbr class="published" title="2010-09-24T00:00:00">
-    [ <b>Fri 24 September 2010</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/book-review-css-mastery">Book Review: CSS Mastery</a> <span class="radius secondary label">Created: Fri 24 September 2010</span><span class="radius secondary label"> Category: Books
 				</li>
     	                     <li> 
-			   		<a href="./blog/ssh-rsync-dreamhost-backup-user">SSH RSYNC Dreamhost Backup User</a> <span> 	<abbr class="published" title="2010-08-08T00:00:00">
-    [ <b>Sun 08 August 2010</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/ssh-rsync-dreamhost-backup-user">SSH RSYNC Dreamhost Backup User</a> <span class="radius secondary label">Created: Sun 08 August 2010</span><span class="radius secondary label"> Category: Code
 				</li>
     	                     <li> 
-			   		<a href="./blog/a-very-simple-android-application-for-safety">A Very Simple Android Application for Safety</a> <span> 	<abbr class="published" title="2009-12-16T00:00:00">
-    [ <b>Wed 16 December 2009</b> ]
-</span>
+			   	    <a href="http://amanjeev.com/blog/a-very-simple-android-application-for-safety">A Very Simple Android Application for Safety</a> <span class="radius secondary label">Created: Wed 16 December 2009</span><span class="radius secondary label"> Category: Code
 				</li>
     	     			</ul>
-				</div>
-	</div>
-</div> 
-
+		
      </div>
   </div>
   
-  <div class="row" id="footer">
-	<div class="twelve columns">
-		<p>
-			Contact:
-			<a href="mailto:aj@amanjeev.com">@Email</a> | 
-			<a href="https://twitter.com/amanjeev">@Twitter</a> | 
-			<a href="https://github.com/amanjeev">@Github</a> | 
-			<a href="http://500px.com/amanjeev">@500px</a> | 
-			<a href="http://www.flickr.com/photos/amanjeev/">@Flickr</a> | 
-			<a href="http://linkedin/in/amanjeev">@Linkedin</a> | 
-			<a href="http://amanjeev.blogspot.com/">@Blogger</a>
-		</p>
-		<p>&copy; 2013 Amanjeev Sethi</p>
-
-		<p>Powered by: <a href="http://python.org">Python</a> | <a href="http://docs.getpelican.com/en/3.0/">Pelican</a> | <a href="http://foundation.zurb.com/">Foundation</a></p>
+  <div id="copyright">
+  <div class="row full-width">
+	<div class="large-4 columns">
+        <p>Powered by: <a href="http://python.org">Python</a> | <a href="http://docs.getpelican.com/en/3.0/">Pelican</a> | <a href="http://foundation.zurb.com/">Foundation</a></p>
+    </div> 
+    <div class="large-8 columns">
+		<ul class="inline-list right">
+	        <li><a href="mailto:aj@amanjeev.com" class="fc-webicon mail">Email</a> </li>
+        	<li><a href="https://twitter.com/amanjeev" class="fc-webicon twitter">Twitter</a> </li>
+        	<li><a href="https://github.com/amanjeev" class="fc-webicon github">Github</a> </li>
+    		<li><a href="http://linkedin/in/amanjeev" class="fc-webicon linkedin">Linkedin</a> </li>
+			<li><a href="http://amanjeev.blogspot.com/" class="fc-webicon blogger">Blogger</a> </li>
+    		<li><a href="http://www.flickr.com/photos/amanjeev/" class="fc-webicon flickr">Flickr</a> </li>
+        	<li><a href="http://500px.com/amanjeev" class="fc-webicon f500px">500px</a> </li>
+		</ul>
+        
 	</div>
+		           
   </div>
- 
+  
+ </div>
   <!-- Included JS Files (Uncompressed) -->
   <!--
   
-  <script src="javascripts/jquery.js"></script>
-  
+  <script src="javascripts/jquery.js"></script>  
   <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  
   <script src="javascripts/jquery.foundation.forms.js"></script>
-  
   <script src="javascripts/jquery.foundation.reveal.js"></script>
-  
   <script src="javascripts/jquery.foundation.orbit.js"></script>
-  
   <script src="javascripts/jquery.foundation.navigation.js"></script>
-  
   <script src="javascripts/jquery.foundation.buttons.js"></script>
-  
   <script src="javascripts/jquery.foundation.tabs.js"></script>
-  
   <script src="javascripts/jquery.foundation.tooltips.js"></script>
-  
   <script src="javascripts/jquery.foundation.accordion.js"></script>
-  
   <script src="javascripts/jquery.placeholder.js"></script>
-  
   <script src="javascripts/jquery.foundation.alerts.js"></script>
-  
   <script src="javascripts/jquery.foundation.topbar.js"></script>
-  
   <script src="javascripts/jquery.foundation.joyride.js"></script>
-  
   <script src="javascripts/jquery.foundation.clearing.js"></script>
-  
   <script src="javascripts/jquery.foundation.magellan.js"></script>
-  
   -->
   
   <!-- Included JS Files (Compressed) -->
-  <script type="text/javascript" src="/theme/js/jquery.js"></script>
+  <script type="text/javascript" src="/theme/js/vendor/jquery.js"></script>
   <script type="text/javascript" src="/theme/js/foundation.min.js"></script>
-  
+  <script type="text/javascript">
+    $(document).foundation();
+  </script>
+  <!--<script src="javascripts/jquery.foundation.navigation.js"></script>-->
+
   <!-- Initialize JS Plugins -->
   <script type="text/javascript" src="/theme/js/app.js"></script>
-
+    
+    
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project=6316123; 

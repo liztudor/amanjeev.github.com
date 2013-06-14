@@ -15,9 +15,10 @@
   
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="/theme/css/foundation.min.css">
+  <link rel="stylesheet" href="/theme/css/fc-webicons.css">
   <link rel="stylesheet" href="/theme/css/app.css">
 
-  <script type="text/javascript" src="/theme/js/modernizr.foundation.js"></script>
+  <script type="text/javascript" src="/theme/js/vendor/custom.modernizr.js"></script>
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -25,65 +26,64 @@
   <![endif]-->
 
 </head>
-<body>
-
+<body class="antialiased">
+    
+  <!-- Header -->
+  <!--
   <div class="row">
-  <div id="header" class="twelve columns">
-  <div class="row">
-    <div class="three columns">
-		<h1 id="logo">
-      		<a href=".." title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a>
-	  	</h1>
-	</div>
-	<div class="nine columns">
-	</div>
+    <div id="header" class="twelve columns">
+    <div class="row">
+        <div class="three columns">
+		    <p id="logo">
+      		    <a href="http://amanjeev.com" title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a>
+	  	    <p>
+    	</div>
 	</div>
 	</div>
-  </div>
-  <div class="row">
-	<div class="twelve columns">
+  </div> 
+  -->
+  
+	<!--<div class="twelve columns">-->
+    
+        <div class="sticky contain-to-grid fixed">
 		<nav class="top-bar">
-			<ul>
+			<ul class="title-area">
+            <!--
 			<li class="name">
 				<a href="#" title="Anchor" style="display:none;">#</a>
 				<li class="toggle-topbar"><a href="#"></a></li>
 			</li>
+            -->
+            <li class="name">
+                <h1><a href="/" title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 			</ul>
-		<section>
-		<ul class="left">
-			<li class="divider"></li>
-			<li><a href="/">Home</a></li>
-			<li class="divider"></li>
-			<li><a href="/blog.html">Posts</a></li>
-			<li class="divider"></li>
-			<li><a href="/archives.html">Archives</a></li>
-			<li class="divider"></li>
-			                               
-         	            	<li><a href="../photography">Photography</a></li>
-				<li class="divider"></li>
-         	              
-       					</ul>
-		</section>
+    		<section class="top-bar-section">
+		    <ul class="right">
+                <li class="divider"></li>
+                <li><a href="/">Home</a></li>
+                <li class="divider"></li>
+                <li><a href="/blog.html">Posts</a></li>
+                <li class="divider"></li>
+                <li><a href="/archives.html">Archives</a></li>
+                <li class="divider"></li>
+                                                            <li><a href="/photography">Photography</a></li>
+                        <li class="divider"></li>
+                                  
+                			</ul>
+	    	</section>
 		</nav>
-	</div>
-  </div>
+        </div>
+	
   <div class="row">
-    <div class="twelve columns">
-      	<div class="row">
-	<div class="twelve columns">
-		<div class="panel">
- 		 <article>
-  		<header><h2>Photography </h2>  </header>			
+    <div class="large-12 columns">
+      	 		 <article>
+  		<header><h1 class="subheader">Photography </h1>  </header>			
 	    <p>I have a lot of interest in photography. Currently, I own a Nikon D7000 with an 18-105mm + 70-200mm lens pack. I do not have a lot of cash to spend so this suffices for the time being. I absolutely love street photography and NYC and I do not leave any chance to travel up to the city.</p>
 <ul class="simple">
-<li><ul class="first">
 <li><a class="reference external" href="http://www.flickr.com/photos/amanjeev/">Flickr</a>  - I post more casual photographs here.</li>
-</ul>
-</li>
-<li><ul class="first">
 <li><a class="reference external" href="http://500px.com/amanjeev">500px</a> - This website is such an inspiration to this hobby or profession. I have learnt so much at <a class="reference external" href="http://500px.com">500px.com</a>.</li>
-</ul>
-</li>
 </ul>
 <p>Some of my photographs:</p>
 <img alt="http://pcdn.500px.net/16993455/463fa3491772eb535a60b96bd1bff134637fa454/4.jpg" src="http://pcdn.500px.net/16993455/463fa3491772eb535a60b96bd1bff134637fa454/4.jpg" />
@@ -104,74 +104,63 @@
 <p><a class="reference external" href="http://500px.com/photo/10272933">Burning Bottom</a></p>
 
 		</article>		
- 		 </div>	
-	</div>
-</div>
      </div>
   </div>
   
-  <div class="row" id="footer">
-	<div class="twelve columns">
-		<p>
-			Contact:
-			<a href="mailto:aj@amanjeev.com">@Email</a> | 
-			<a href="https://twitter.com/amanjeev">@Twitter</a> | 
-			<a href="https://github.com/amanjeev">@Github</a> | 
-			<a href="http://500px.com/amanjeev">@500px</a> | 
-			<a href="http://www.flickr.com/photos/amanjeev/">@Flickr</a> | 
-			<a href="http://linkedin/in/amanjeev">@Linkedin</a> | 
-			<a href="http://amanjeev.blogspot.com/">@Blogger</a>
-		</p>
-		<p>&copy; 2013 Amanjeev Sethi</p>
-
-		<p>Powered by: <a href="http://python.org">Python</a> | <a href="http://docs.getpelican.com/en/3.0/">Pelican</a> | <a href="http://foundation.zurb.com/">Foundation</a></p>
+  <div id="copyright">
+  <div class="row full-width">
+	<div class="large-4 columns">
+        <p>Powered by: <a href="http://python.org">Python</a> | <a href="http://docs.getpelican.com/en/3.0/">Pelican</a> | <a href="http://foundation.zurb.com/">Foundation</a></p>
+    </div> 
+    <div class="large-8 columns">
+		<ul class="inline-list right">
+	        <li><a href="mailto:aj@amanjeev.com" class="fc-webicon mail">Email</a> </li>
+        	<li><a href="https://twitter.com/amanjeev" class="fc-webicon twitter">Twitter</a> </li>
+        	<li><a href="https://github.com/amanjeev" class="fc-webicon github">Github</a> </li>
+    		<li><a href="http://linkedin/in/amanjeev" class="fc-webicon linkedin">Linkedin</a> </li>
+			<li><a href="http://amanjeev.blogspot.com/" class="fc-webicon blogger">Blogger</a> </li>
+    		<li><a href="http://www.flickr.com/photos/amanjeev/" class="fc-webicon flickr">Flickr</a> </li>
+        	<li><a href="http://500px.com/amanjeev" class="fc-webicon f500px">500px</a> </li>
+		</ul>
+        
 	</div>
+		           
   </div>
- 
+  
+ </div>
   <!-- Included JS Files (Uncompressed) -->
   <!--
   
-  <script src="javascripts/jquery.js"></script>
-  
+  <script src="javascripts/jquery.js"></script>  
   <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  
   <script src="javascripts/jquery.foundation.forms.js"></script>
-  
   <script src="javascripts/jquery.foundation.reveal.js"></script>
-  
   <script src="javascripts/jquery.foundation.orbit.js"></script>
-  
   <script src="javascripts/jquery.foundation.navigation.js"></script>
-  
   <script src="javascripts/jquery.foundation.buttons.js"></script>
-  
   <script src="javascripts/jquery.foundation.tabs.js"></script>
-  
   <script src="javascripts/jquery.foundation.tooltips.js"></script>
-  
   <script src="javascripts/jquery.foundation.accordion.js"></script>
-  
   <script src="javascripts/jquery.placeholder.js"></script>
-  
   <script src="javascripts/jquery.foundation.alerts.js"></script>
-  
   <script src="javascripts/jquery.foundation.topbar.js"></script>
-  
   <script src="javascripts/jquery.foundation.joyride.js"></script>
-  
   <script src="javascripts/jquery.foundation.clearing.js"></script>
-  
   <script src="javascripts/jquery.foundation.magellan.js"></script>
-  
   -->
   
   <!-- Included JS Files (Compressed) -->
-  <script type="text/javascript" src="/theme/js/jquery.js"></script>
+  <script type="text/javascript" src="/theme/js/vendor/jquery.js"></script>
   <script type="text/javascript" src="/theme/js/foundation.min.js"></script>
-  
+  <script type="text/javascript">
+    $(document).foundation();
+  </script>
+  <!--<script src="javascripts/jquery.foundation.navigation.js"></script>-->
+
   <!-- Initialize JS Plugins -->
   <script type="text/javascript" src="/theme/js/app.js"></script>
-
+    
+    
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project=6316123; 

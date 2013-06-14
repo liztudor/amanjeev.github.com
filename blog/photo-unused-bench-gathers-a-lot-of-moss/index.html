@@ -15,9 +15,10 @@
   
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="/theme/css/foundation.min.css">
+  <link rel="stylesheet" href="/theme/css/fc-webicons.css">
   <link rel="stylesheet" href="/theme/css/app.css">
 
-  <script type="text/javascript" src="/theme/js/modernizr.foundation.js"></script>
+  <script type="text/javascript" src="/theme/js/vendor/custom.modernizr.js"></script>
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -25,56 +26,61 @@
   <![endif]-->
 
 </head>
-<body>
-
+<body class="antialiased">
+    
+  <!-- Header -->
+  <!--
   <div class="row">
-  <div id="header" class="twelve columns">
-  <div class="row">
-    <div class="three columns">
-		<h1 id="logo">
-      		<a href="../.." title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a>
-	  	</h1>
-	</div>
-	<div class="nine columns">
-	</div>
+    <div id="header" class="twelve columns">
+    <div class="row">
+        <div class="three columns">
+		    <p id="logo">
+      		    <a href="http://amanjeev.com" title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a>
+	  	    <p>
+    	</div>
 	</div>
 	</div>
-  </div>
-  <div class="row">
-	<div class="twelve columns">
+  </div> 
+  -->
+  
+	<!--<div class="twelve columns">-->
+    
+        <div class="sticky contain-to-grid fixed">
 		<nav class="top-bar">
-			<ul>
+			<ul class="title-area">
+            <!--
 			<li class="name">
 				<a href="#" title="Anchor" style="display:none;">#</a>
 				<li class="toggle-topbar"><a href="#"></a></li>
 			</li>
+            -->
+            <li class="name">
+                <h1><a href="/" title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 			</ul>
-		<section>
-		<ul class="left">
-			<li class="divider"></li>
-			<li><a href="/">Home</a></li>
-			<li class="divider"></li>
-			<li><a href="/blog.html">Posts</a></li>
-			<li class="divider"></li>
-			<li><a href="/archives.html">Archives</a></li>
-			<li class="divider"></li>
-			                               
-         	            	<li><a href="../../photography">Photography</a></li>
-				<li class="divider"></li>
-         	              
-       					</ul>
-		</section>
+    		<section class="top-bar-section">
+		    <ul class="right">
+                <li class="divider"></li>
+                <li><a href="/">Home</a></li>
+                <li class="divider"></li>
+                <li><a href="/blog.html">Posts</a></li>
+                <li class="divider"></li>
+                <li><a href="/archives.html">Archives</a></li>
+                <li class="divider"></li>
+                                                            <li><a href="/photography">Photography</a></li>
+                        <li class="divider"></li>
+                                  
+                			</ul>
+	    	</section>
 		</nav>
-	</div>
-  </div>
+        </div>
+	
   <div class="row">
-    <div class="twelve columns">
-      	<div class="row">
-	<div class="twelve columns">
-		<div class="panel">
- 		 <article>
-  		<header><h2>Photo: Unused bench gathers a lot of moss </h2>  </header>			
-	    <img alt="http://pcdn.500px.net/16341429/ea700652f238ad65807bdfe9c06ff1f5b0a92a15/4.jpg" src="http://pcdn.500px.net/16341429/ea700652f238ad65807bdfe9c06ff1f5b0a92a15/4.jpg" />
+    <div class="large-12 columns">
+      	 		 <article>
+      	 <header><h1 class="subheader"><a href="/blog/photo-unused-bench-gathers-a-lot-of-moss">Photo: Unused bench gathers a lot of moss</a></h1></header>			
+	        <img alt="http://pcdn.500px.net/16341429/ea700652f238ad65807bdfe9c06ff1f5b0a92a15/4.jpg" src="http://pcdn.500px.net/16341429/ea700652f238ad65807bdfe9c06ff1f5b0a92a15/4.jpg" />
 <p><a class="reference external" href="http://500px.com/photo/16341429">Unused bench gathers a lot of moss</a> is now in the Popular pictures’ set on <a class="reference external" href="http://500px.com/">500px (the photography website)</a>. I also have a <a class="reference external" href="http://500px.com/photo/16341455">B&amp;W version of this picture</a> which has amazing texture of this bench but I guess more folks in the world have better/more <cite>cone cells</cite> in their eyes than I do. My response to the B&amp;W picture was more positive than this one, even though I love this picture.</p>
 <p>This picture was taken in the American University, Washington D.C. Photography can be very unpredictable when it comes to subjects. One can have as many themes and one can keep on shooting the entire day but the best piece of the day may certainly be something you just randomly clicked. For my future self, I need to remember two things -</p>
 <ol class="arabic simple">
@@ -92,80 +98,69 @@
 		<a class="addthis_button_preferred_4"></a>
 		<a class="addthis_button_compact"></a>
 		<a class="addthis_counter addthis_bubble_style"></a>
-		</div>
+	  </div>
+        
 		<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
 		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4eb84aa830869b60"></script>
 		<!-- AddThis Button END -->
-	</div>
-
- 		 </div>
-		</div>
 
      </div>
   </div>
   
-  <div class="row" id="footer">
-	<div class="twelve columns">
-		<p>
-			Contact:
-			<a href="mailto:aj@amanjeev.com">@Email</a> | 
-			<a href="https://twitter.com/amanjeev">@Twitter</a> | 
-			<a href="https://github.com/amanjeev">@Github</a> | 
-			<a href="http://500px.com/amanjeev">@500px</a> | 
-			<a href="http://www.flickr.com/photos/amanjeev/">@Flickr</a> | 
-			<a href="http://linkedin/in/amanjeev">@Linkedin</a> | 
-			<a href="http://amanjeev.blogspot.com/">@Blogger</a>
-		</p>
-		<p>&copy; 2013 Amanjeev Sethi</p>
-
-		<p>Powered by: <a href="http://python.org">Python</a> | <a href="http://docs.getpelican.com/en/3.0/">Pelican</a> | <a href="http://foundation.zurb.com/">Foundation</a></p>
+  <div id="copyright">
+  <div class="row full-width">
+	<div class="large-4 columns">
+        <p>Powered by: <a href="http://python.org">Python</a> | <a href="http://docs.getpelican.com/en/3.0/">Pelican</a> | <a href="http://foundation.zurb.com/">Foundation</a></p>
+    </div> 
+    <div class="large-8 columns">
+		<ul class="inline-list right">
+	        <li><a href="mailto:aj@amanjeev.com" class="fc-webicon mail">Email</a> </li>
+        	<li><a href="https://twitter.com/amanjeev" class="fc-webicon twitter">Twitter</a> </li>
+        	<li><a href="https://github.com/amanjeev" class="fc-webicon github">Github</a> </li>
+    		<li><a href="http://linkedin/in/amanjeev" class="fc-webicon linkedin">Linkedin</a> </li>
+			<li><a href="http://amanjeev.blogspot.com/" class="fc-webicon blogger">Blogger</a> </li>
+    		<li><a href="http://www.flickr.com/photos/amanjeev/" class="fc-webicon flickr">Flickr</a> </li>
+        	<li><a href="http://500px.com/amanjeev" class="fc-webicon f500px">500px</a> </li>
+		</ul>
+        
 	</div>
+		           
   </div>
- 
+  
+ </div>
   <!-- Included JS Files (Uncompressed) -->
   <!--
   
-  <script src="javascripts/jquery.js"></script>
-  
+  <script src="javascripts/jquery.js"></script>  
   <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  
   <script src="javascripts/jquery.foundation.forms.js"></script>
-  
   <script src="javascripts/jquery.foundation.reveal.js"></script>
-  
   <script src="javascripts/jquery.foundation.orbit.js"></script>
-  
   <script src="javascripts/jquery.foundation.navigation.js"></script>
-  
   <script src="javascripts/jquery.foundation.buttons.js"></script>
-  
   <script src="javascripts/jquery.foundation.tabs.js"></script>
-  
   <script src="javascripts/jquery.foundation.tooltips.js"></script>
-  
   <script src="javascripts/jquery.foundation.accordion.js"></script>
-  
   <script src="javascripts/jquery.placeholder.js"></script>
-  
   <script src="javascripts/jquery.foundation.alerts.js"></script>
-  
   <script src="javascripts/jquery.foundation.topbar.js"></script>
-  
   <script src="javascripts/jquery.foundation.joyride.js"></script>
-  
   <script src="javascripts/jquery.foundation.clearing.js"></script>
-  
   <script src="javascripts/jquery.foundation.magellan.js"></script>
-  
   -->
   
   <!-- Included JS Files (Compressed) -->
-  <script type="text/javascript" src="/theme/js/jquery.js"></script>
+  <script type="text/javascript" src="/theme/js/vendor/jquery.js"></script>
   <script type="text/javascript" src="/theme/js/foundation.min.js"></script>
-  
+  <script type="text/javascript">
+    $(document).foundation();
+  </script>
+  <!--<script src="javascripts/jquery.foundation.navigation.js"></script>-->
+
   <!-- Initialize JS Plugins -->
   <script type="text/javascript" src="/theme/js/app.js"></script>
-
+    
+    
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project=6316123; 

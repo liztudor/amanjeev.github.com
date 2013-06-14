@@ -15,9 +15,10 @@
   
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="/theme/css/foundation.min.css">
+  <link rel="stylesheet" href="/theme/css/fc-webicons.css">
   <link rel="stylesheet" href="/theme/css/app.css">
 
-  <script type="text/javascript" src="/theme/js/modernizr.foundation.js"></script>
+  <script type="text/javascript" src="/theme/js/vendor/custom.modernizr.js"></script>
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -25,117 +26,154 @@
   <![endif]-->
 
 </head>
-<body>
-
+<body class="antialiased">
+    
+  <!-- Header -->
+  <!--
   <div class="row">
-  <div id="header" class="twelve columns">
-  <div class="row">
-    <div class="three columns">
-		<h1 id="logo">
-      		<a href="../.." title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a>
-	  	</h1>
-	</div>
-	<div class="nine columns">
-	</div>
+    <div id="header" class="twelve columns">
+    <div class="row">
+        <div class="three columns">
+		    <p id="logo">
+      		    <a href="http://amanjeev.com" title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a>
+	  	    <p>
+    	</div>
 	</div>
 	</div>
-  </div>
-  <div class="row">
-	<div class="twelve columns">
+  </div> 
+  -->
+  
+	<!--<div class="twelve columns">-->
+    
+        <div class="sticky contain-to-grid fixed">
 		<nav class="top-bar">
-			<ul>
+			<ul class="title-area">
+            <!--
 			<li class="name">
 				<a href="#" title="Anchor" style="display:none;">#</a>
 				<li class="toggle-topbar"><a href="#"></a></li>
 			</li>
+            -->
+            <li class="name">
+                <h1><a href="/" title="Personal website of Amanjeev Sethi">Amanjeev Sethi</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 			</ul>
-		<section>
-		<ul class="left">
-			<li class="divider"></li>
-			<li><a href="/">Home</a></li>
-			<li class="divider"></li>
-			<li><a href="/blog.html">Posts</a></li>
-			<li class="divider"></li>
-			<li><a href="/archives.html">Archives</a></li>
-			<li class="divider"></li>
-			                               
-         	            	<li><a href="../../photography">Photography</a></li>
-				<li class="divider"></li>
-         	              
-       					</ul>
-		</section>
+    		<section class="top-bar-section">
+		    <ul class="right">
+                <li class="divider"></li>
+                <li><a href="/">Home</a></li>
+                <li class="divider"></li>
+                <li><a href="/blog.html">Posts</a></li>
+                <li class="divider"></li>
+                <li><a href="/archives.html">Archives</a></li>
+                <li class="divider"></li>
+                                                            <li><a href="/photography">Photography</a></li>
+                        <li class="divider"></li>
+                                  
+                			</ul>
+	    	</section>
 		</nav>
-	</div>
-  </div>
+        </div>
+	
   <div class="row">
-    <div class="twelve columns">
-      	<div class="row">
-	<div class="twelve columns">
-		<div class="panel">
- 		 <article>
-  		<header><h2>List of some Vim commands </h2>  </header>			
-	    <p>Just a list, nothing special.</p>
-<blockquote>
-=</blockquote>
-<p>Reformats the selected text according to the current indent rules.</p>
-<blockquote>
-==</blockquote>
-<p>Auto-indent current line.</p>
-<blockquote>
-g-</blockquote>
-<p>If you make a lot of edits, then undo them, then make one more edit, then decide you want the first set of edits back, most editors can't do it.  Emacs can, but it's a pain.  g- in Vim will usually take you straight there. This is not available in Vi.</p>
-<blockquote>
-%</blockquote>
-<p>Jump to the corresponding sibling item like open/close brackets - (), {}, []. Or HTML tags.</p>
-<blockquote>
-zz</blockquote>
-<p>Center your screen on the current line.</p>
-<blockquote>
-gi</blockquote>
-<p>In command mode, this goes to insert mode at the last place you were in the insert mode.</p>
-<blockquote>
-<p>Recording with : q&lt;character&gt;</p>
-<p>Replay with    : &#64;&lt;character&gt;</p>
-</blockquote>
-<p>Example, record with qa and replay with &#64;a.</p>
-<blockquote>
-:so %</blockquote>
-<p>To reload the file you are currently editing. This helps when you are editing .gvimrc or .vimrc files in Vim and you want to reload the changes.</p>
-<blockquote>
-<p>:vsp</p>
-<p>:sp</p>
-</blockquote>
-<p>Vertical split and horizontal split window, respectively. A lot of combinations are available. They take a command to not duplicate the window by default and open the one you specify.</p>
-<blockquote>
-<p>set splitbelow</p>
-<p>set splitright</p>
-</blockquote>
-<p>To make splitting more intuitive.</p>
-<blockquote>
-<p>nnoremap &lt;C-J&gt; &lt;C-W&gt;&lt;C-J&gt;</p>
-<p>nnoremap &lt;C-K&gt; &lt;C-W&gt;&lt;C-K&gt;</p>
-<p>nnoremap &lt;C-L&gt; &lt;C-W&gt;&lt;C-L&gt;</p>
-<p>nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;</p>
-</blockquote>
-<p>To map moving between the buffer splits more intuitive with c-hjkl.</p>
-<blockquote>
-ctrl + w _</blockquote>
-<p>Max out the height of the current split</p>
-<blockquote>
-ctrl + w |</blockquote>
-<p>Max out the width of the current split</p>
-<blockquote>
-ctrl + w =</blockquote>
-<p>Normalize all split sizes, which is very handy when resizing terminal</p>
-<blockquote>
-Ctrl+W R</blockquote>
-<p>Swap top/bottom or left/right split</p>
-<blockquote>
-Ctrl+W T</blockquote>
-<p>Break out current window into a new tabview</p>
-<blockquote>
-Ctrl+W o</blockquote>
-<p>Close every window in the current tabview but the current one</p>
+    <div class="large-12 columns">
+      	 		 <article>
+      	 <header><h1 class="subheader"><a href="/blog/list-of-some-vim-commands">List of some Vim commands</a></h1></header>			
+	        <p>Just a list, nothing special.</p>
+<dl class="docutils">
+<dt>Reformats the selected text according to the current indent rules</dt>
+<dd><pre class="first last literal-block">
+=
+</pre>
+</dd>
+<dt>Auto-indent current line</dt>
+<dd><pre class="first last literal-block">
+==
+</pre>
+</dd>
+<dt>If you make a lot of edits, then undo them, then make one more edit, then decide you want the first set of edits back, most editors can't do it.  Emacs can, but it's a pain.  g- in Vim will usually take you straight there. This is not available in Vi.</dt>
+<dd><pre class="first last literal-block">
+g-
+</pre>
+</dd>
+<dt>Jump to the corresponding sibling item like open/close brackets - (), {}, []. Or HTML tags</dt>
+<dd><pre class="first last literal-block">
+%
+</pre>
+</dd>
+<dt>Center your screen on the current line</dt>
+<dd><pre class="first last literal-block">
+zz
+</pre>
+</dd>
+<dt>In command mode, this goes to insert mode at the last place you were in the insert mode</dt>
+<dd><pre class="first last literal-block">
+gi
+</pre>
+</dd>
+<dt>Example, record with qa and replay with &#64;a</dt>
+<dd><pre class="first last literal-block">
+Recording with : q&lt;character&gt;
+Replay with    : &#64;&lt;character&gt;
+</pre>
+</dd>
+<dt>To reload the file you are currently editing. This helps when you are editing .gvimrc or .vimrc files in Vim and you want to reload the changes</dt>
+<dd><pre class="first last literal-block">
+:so %
+</pre>
+</dd>
+<dt>Vertical split and horizontal split window, respectively. A lot of combinations are available. They take a command to not duplicate the window by default and open the one you specify</dt>
+<dd><pre class="first last literal-block">
+:vsp
+:sp
+</pre>
+</dd>
+<dt>To make splitting more intuitive</dt>
+<dd><pre class="first last literal-block">
+set splitbelow
+set splitright
+</pre>
+</dd>
+<dt>To map moving between the buffer splits more intuitive with c-hjkl</dt>
+<dd><pre class="first last literal-block">
+nnoremap &lt;C-J&gt; &lt;C-W&gt;&lt;C-J&gt;
+nnoremap &lt;C-K&gt; &lt;C-W&gt;&lt;C-K&gt;
+nnoremap &lt;C-L&gt; &lt;C-W&gt;&lt;C-L&gt;
+nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
+</pre>
+</dd>
+<dt>Max out the height of the current split</dt>
+<dd><pre class="first last literal-block">
+ctrl + w _
+</pre>
+</dd>
+<dt>Max out the width of the current split</dt>
+<dd><pre class="first last literal-block">
+ctrl + w |
+</pre>
+</dd>
+<dt>Normalize all split sizes, which is very handy when resizing terminal</dt>
+<dd><pre class="first last literal-block">
+ctrl + w =
+</pre>
+</dd>
+<dt>Swap top/bottom or left/right split</dt>
+<dd><pre class="first last literal-block">
+Ctrl+W R
+</pre>
+</dd>
+<dt>Break out current window into a new tabview</dt>
+<dd><pre class="first last literal-block">
+Ctrl+W T
+</pre>
+</dd>
+<dt>Close every window in the current tabview but the current one</dt>
+<dd><pre class="first last literal-block">
+Ctrl+W o
+</pre>
+</dd>
+</dl>
 <p><strong>Some links</strong></p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/amanjeev/vim-setup/blob/master/.gvimrc">My .gvimrc file on Github</a></li>
@@ -153,80 +191,69 @@ Ctrl+W o</blockquote>
 		<a class="addthis_button_preferred_4"></a>
 		<a class="addthis_button_compact"></a>
 		<a class="addthis_counter addthis_bubble_style"></a>
-		</div>
+	  </div>
+        
 		<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
 		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4eb84aa830869b60"></script>
 		<!-- AddThis Button END -->
-	</div>
-
- 		 </div>
-		</div>
 
      </div>
   </div>
   
-  <div class="row" id="footer">
-	<div class="twelve columns">
-		<p>
-			Contact:
-			<a href="mailto:aj@amanjeev.com">@Email</a> | 
-			<a href="https://twitter.com/amanjeev">@Twitter</a> | 
-			<a href="https://github.com/amanjeev">@Github</a> | 
-			<a href="http://500px.com/amanjeev">@500px</a> | 
-			<a href="http://www.flickr.com/photos/amanjeev/">@Flickr</a> | 
-			<a href="http://linkedin/in/amanjeev">@Linkedin</a> | 
-			<a href="http://amanjeev.blogspot.com/">@Blogger</a>
-		</p>
-		<p>&copy; 2013 Amanjeev Sethi</p>
-
-		<p>Powered by: <a href="http://python.org">Python</a> | <a href="http://docs.getpelican.com/en/3.0/">Pelican</a> | <a href="http://foundation.zurb.com/">Foundation</a></p>
+  <div id="copyright">
+  <div class="row full-width">
+	<div class="large-4 columns">
+        <p>Powered by: <a href="http://python.org">Python</a> | <a href="http://docs.getpelican.com/en/3.0/">Pelican</a> | <a href="http://foundation.zurb.com/">Foundation</a></p>
+    </div> 
+    <div class="large-8 columns">
+		<ul class="inline-list right">
+	        <li><a href="mailto:aj@amanjeev.com" class="fc-webicon mail">Email</a> </li>
+        	<li><a href="https://twitter.com/amanjeev" class="fc-webicon twitter">Twitter</a> </li>
+        	<li><a href="https://github.com/amanjeev" class="fc-webicon github">Github</a> </li>
+    		<li><a href="http://linkedin/in/amanjeev" class="fc-webicon linkedin">Linkedin</a> </li>
+			<li><a href="http://amanjeev.blogspot.com/" class="fc-webicon blogger">Blogger</a> </li>
+    		<li><a href="http://www.flickr.com/photos/amanjeev/" class="fc-webicon flickr">Flickr</a> </li>
+        	<li><a href="http://500px.com/amanjeev" class="fc-webicon f500px">500px</a> </li>
+		</ul>
+        
 	</div>
+		           
   </div>
- 
+  
+ </div>
   <!-- Included JS Files (Uncompressed) -->
   <!--
   
-  <script src="javascripts/jquery.js"></script>
-  
+  <script src="javascripts/jquery.js"></script>  
   <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  
   <script src="javascripts/jquery.foundation.forms.js"></script>
-  
   <script src="javascripts/jquery.foundation.reveal.js"></script>
-  
   <script src="javascripts/jquery.foundation.orbit.js"></script>
-  
   <script src="javascripts/jquery.foundation.navigation.js"></script>
-  
   <script src="javascripts/jquery.foundation.buttons.js"></script>
-  
   <script src="javascripts/jquery.foundation.tabs.js"></script>
-  
   <script src="javascripts/jquery.foundation.tooltips.js"></script>
-  
   <script src="javascripts/jquery.foundation.accordion.js"></script>
-  
   <script src="javascripts/jquery.placeholder.js"></script>
-  
   <script src="javascripts/jquery.foundation.alerts.js"></script>
-  
   <script src="javascripts/jquery.foundation.topbar.js"></script>
-  
   <script src="javascripts/jquery.foundation.joyride.js"></script>
-  
   <script src="javascripts/jquery.foundation.clearing.js"></script>
-  
   <script src="javascripts/jquery.foundation.magellan.js"></script>
-  
   -->
   
   <!-- Included JS Files (Compressed) -->
-  <script type="text/javascript" src="/theme/js/jquery.js"></script>
+  <script type="text/javascript" src="/theme/js/vendor/jquery.js"></script>
   <script type="text/javascript" src="/theme/js/foundation.min.js"></script>
-  
+  <script type="text/javascript">
+    $(document).foundation();
+  </script>
+  <!--<script src="javascripts/jquery.foundation.navigation.js"></script>-->
+
   <!-- Initialize JS Plugins -->
   <script type="text/javascript" src="/theme/js/app.js"></script>
-
+    
+    
     <!-- Start of StatCounter Code for Default Guide -->
     <script type="text/javascript">
         var sc_project=6316123; 
