@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Amanjeev Sethi</title><link href="http://amanjeev.com/" rel="alternate"></link><link href="http://amanjeev.com/feeds/programming.atom.xml" rel="self"></link><id>http://amanjeev.com/</id><updated>2013-04-20T00:00:00-04:00</updated><entry><title>List of some Vim commands</title><link href="http://amanjeev.com/blog/list-of-some-vim-commands" rel="alternate"></link><updated>2013-04-20T00:00:00-04:00</updated><author><name>Amanjeev Sethi</name></author><id>tag:amanjeev.com,2013-04-20:blog/list-of-some-vim-commands</id><summary type="html">&lt;p&gt;Just a list, nothing special.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Amanjeev Sethi</title><link href="http://amanjeev.com/" rel="alternate"></link><link href="http://amanjeev.com/feeds/programming.atom.xml" rel="self"></link><id>http://amanjeev.com/</id><updated>2014-03-09T00:00:00-05:00</updated><entry><title>sdx metadata raid error while CentOS installation on a previously RAID hard drive</title><link href="http://amanjeev.com/blog/sdx-raid-error-centos" rel="alternate"></link><updated>2014-03-09T00:00:00-05:00</updated><author><name>Amanjeev Sethi</name></author><id>tag:amanjeev.com,2014-03-09:blog/sdx-raid-error-centos</id><summary type="html">&lt;p&gt;So, one of my hard drives in a RAID1 setup burnt. See the following image. That SATA conenctor melted and killed my Hard drive as well. &lt;/p&gt;
+&lt;p&gt;&lt;img alt="burnt hard drive and sata connector" src="/img/burnt_hard_drive.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;As if that was not enough, I had to install CentOS on the hard drive that survived but kept bumping into the error - &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Warning: Disks sdX contains BIOS RAID metadata, but are not part of any recognized BIOS RAID sets. Ignoring disks sdX&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The solution is to remove that metadata before the installation. If you have a boot disk sitting, pop that in and run this - &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mraid -r -E /dev/sdX&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Here is the github gist:
+&lt;script src="https://gist.github.com/amanjeev/9458887.js"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;This post is also a test of markdown instead of restructuredtext.&lt;/p&gt;</summary></entry><entry><title>List of some Vim commands</title><link href="http://amanjeev.com/blog/list-of-some-vim-commands" rel="alternate"></link><updated>2013-04-20T00:00:00-04:00</updated><author><name>Amanjeev Sethi</name></author><id>tag:amanjeev.com,2013-04-20:blog/list-of-some-vim-commands</id><summary type="html">&lt;p&gt;Just a list, nothing special.&lt;/p&gt;
 &lt;dl class="docutils"&gt;
 &lt;dt&gt;Reformats the selected text according to the current indent rules&lt;/dt&gt;
 &lt;dd&gt;&lt;pre class="first last literal-block"&gt;

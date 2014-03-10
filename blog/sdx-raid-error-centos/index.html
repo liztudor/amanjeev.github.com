@@ -13,7 +13,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title>Amanjeev Sethi / List of some Vim commands</title>
+  <title>Amanjeev Sethi / sdx metadata raid error while CentOS installation on a previously RAID hard drive</title>
 
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="/theme/css/foundation.min.css">
@@ -81,113 +81,22 @@
   <div class="row">
     <div class="large-12 columns">
       	 		 <article>
-      	 <header><h1 class="subheader"><a href="/blog/list-of-some-vim-commands">List of some Vim commands</a></h1></header>
-	        <p>Just a list, nothing special.</p>
-<dl class="docutils">
-<dt>Reformats the selected text according to the current indent rules</dt>
-<dd><pre class="first last literal-block">
-=
-</pre>
-</dd>
-<dt>Auto-indent current line</dt>
-<dd><pre class="first last literal-block">
-==
-</pre>
-</dd>
-<dt>If you make a lot of edits, then undo them, then make one more edit, then decide you want the first set of edits back, most editors can't do it.  Emacs can, but it's a pain.  g- in Vim will usually take you straight there. This is not available in Vi.</dt>
-<dd><pre class="first last literal-block">
-g-
-</pre>
-</dd>
-<dt>Jump to the corresponding sibling item like open/close brackets - (), {}, []. Or HTML tags</dt>
-<dd><pre class="first last literal-block">
-%
-</pre>
-</dd>
-<dt>Center your screen on the current line</dt>
-<dd><pre class="first last literal-block">
-zz
-</pre>
-</dd>
-<dt>In command mode, this goes to insert mode at the last place you were in the insert mode</dt>
-<dd><pre class="first last literal-block">
-gi
-</pre>
-</dd>
-<dt>Example, record with qa and replay with &#64;a</dt>
-<dd><pre class="first last literal-block">
-Recording with : q&lt;character&gt;
-Replay with    : &#64;&lt;character&gt;
-</pre>
-</dd>
-<dt>To reload the file you are currently editing. This helps when you are editing .gvimrc or .vimrc files in Vim and you want to reload the changes</dt>
-<dd><pre class="first last literal-block">
-:so %
-</pre>
-</dd>
-<dt>Vertical split and horizontal split window, respectively. A lot of combinations are available. They take a command to not duplicate the window by default and open the one you specify</dt>
-<dd><pre class="first last literal-block">
-:vsp
-:sp
-</pre>
-</dd>
-<dt>To make splitting more intuitive</dt>
-<dd><pre class="first last literal-block">
-set splitbelow
-set splitright
-</pre>
-</dd>
-<dt>To map moving between the buffer splits more intuitive with c-hjkl</dt>
-<dd><pre class="first last literal-block">
-nnoremap &lt;C-J&gt; &lt;C-W&gt;&lt;C-J&gt;
-nnoremap &lt;C-K&gt; &lt;C-W&gt;&lt;C-K&gt;
-nnoremap &lt;C-L&gt; &lt;C-W&gt;&lt;C-L&gt;
-nnoremap &lt;C-H&gt; &lt;C-W&gt;&lt;C-H&gt;
-</pre>
-</dd>
-<dt>Max out the height of the current split</dt>
-<dd><pre class="first last literal-block">
-ctrl + w _
-</pre>
-</dd>
-<dt>Max out the width of the current split</dt>
-<dd><pre class="first last literal-block">
-ctrl + w |
-</pre>
-</dd>
-<dt>Normalize all split sizes, which is very handy when resizing terminal</dt>
-<dd><pre class="first last literal-block">
-ctrl + w =
-</pre>
-</dd>
-<dt>Swap top/bottom or left/right split</dt>
-<dd><pre class="first last literal-block">
-Ctrl+W R
-</pre>
-</dd>
-<dt>Break out current window into a new tabview</dt>
-<dd><pre class="first last literal-block">
-Ctrl+W T
-</pre>
-</dd>
-<dt>Close every window in the current tabview but the current one</dt>
-<dd><pre class="first last literal-block">
-Ctrl+W o
-</pre>
-</dd>
-</dl>
-<p><strong>Some links</strong></p>
-<ul class="simple">
-<li><a class="reference external" href="https://github.com/amanjeev/vim-setup/blob/master/.gvimrc">My .gvimrc file on Github</a></li>
-<li><a class="reference external" href="https://github.com/terryma/vim-multiple-cursors">Vim Multiple Cursors plugin like Sublime Text 2</a></li>
-<li><a class="reference external" href="http://robots.thoughtbot.com/post/48275867281/vim-splits-move-faster-and-more-naturally">Vim Splits - Move Faster and More Naturally</a></li>
-<li><a class="reference external" href="http://www.vim.org/scripts/script.php?script_id=1658">NERDTree</a></li>
-</ul>
-
+      	 <header><h1 class="subheader"><a href="/blog/sdx-raid-error-centos">sdx metadata raid error while CentOS installation on a previously RAID hard drive</a></h1></header>
+	        <p>So, one of my hard drives in a RAID1 setup burnt. See the following image. That SATA conenctor melted and killed my Hard drive as well. </p>
+<p><img alt="burnt hard drive and sata connector" src="/img/burnt_hard_drive.jpg" /></p>
+<p>As if that was not enough, I had to install CentOS on the hard drive that survived but kept bumping into the error - </p>
+<blockquote>
+<p>Warning: Disks sdX contains BIOS RAID metadata, but are not part of any recognized BIOS RAID sets. Ignoring disks sdX</p>
+</blockquote>
+<p>The solution is to remove that metadata before the installation. If you have a boot disk sitting, pop that in and run this - </p>
+<p><code>mraid -r -E /dev/sdX</code></p>
+<p>Here is the github gist:
+<script src="https://gist.github.com/amanjeev/9458887.js"></script></p>
+<p>This post is also a test of markdown instead of restructuredtext.</p>
 		</article>
-	         	<abbr class="published" title="2013-04-20T00:00:00">
+	         	<abbr class="published" title="2014-03-09T00:00:00">
     <div class="metadata">
-        <p><span class="radius secondary label">Created: Sat 20 April 2013</span><span class="radius secondary label"> Category: programming</span></p>
+        <p><span class="radius secondary label">Created: Sun 09 March 2014</span><span class="radius secondary label"> Category: programming</span></p>
     </div>
 	
 		 <!-- AddThis Button BEGIN -->
