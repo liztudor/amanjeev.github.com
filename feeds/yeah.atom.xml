@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Amanjeev Sethi</title><link href="http://amanjeev.com/" rel="alternate"></link><link href="http://amanjeev.com/feeds/yeah.atom.xml" rel="self"></link><id>http://amanjeev.com/</id><updated>2013-09-24T00:00:00-04:00</updated><entry><title>My super title</title><link href="http://amanjeev.com/blog/my-super-post" rel="alternate"></link><updated>2013-09-24T00:00:00-04:00</updated><author><name>Amanjeev Sethi</name></author><id>tag:amanjeev.com,2013-09-24:blog/my-super-post</id><summary type="html">&lt;p&gt;This is the content of my super blog post. &lt;/p&gt;
-&lt;p&gt;
-    This is awesome.....
-&lt;/p&gt;
-
-&lt;script src="https://gist.github.com/amanjeev/3087258.js"&gt;&lt;/script&gt;</summary></entry></feed>
